@@ -1,106 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 3 challenges</title>
-
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-    
-    <style>
-        p {
-            color: red;
-        }
-    </style>
-    <style type="text/css">
-    	
-    	body {
-			background: var(--bgColor);
-            
-		}
-
-		div {
-			--bgColor: limegreen;
-		}
-
-    </style>
+    <title>Моя домашня сторінка</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/img.css">
+    @impo
 </head>
-<body style="background: var(--bgColor);">
 
-Вправа 2    
+<body>
 
+    <!-- wrapper app-->
 
-<p style="color: blue;">This is my paragraph.</p>
+    <div class="app">
 
+        <!-- aside bar -->
 
-<hr>
-<p>Звичайний, нудний абзац. Намагайтеся не заснути.</p>
+        <aside class="app-nav">
 
-<p class="exciting">The most exciting paragraph on the page. One of a kind!</p>
+            <!-- header -->
 
-<div class="exciting">The most exciting paragraph on the page. One of a kind!</div>
+            <header class="app-nav-header">
+                <span class="app-nav-header--title">Menu</span>
+                <span>
+                    <button>&lt;--</button>
+                </span>
+            </header>
 
-<style>
-    .exciting {
-        background: #f69d3c;
-        border: 1px solid #696969;
-        padding: 10px;
-    }
-</style>
+            <!-- navigation ul ol dl-->
 
-<hr>
-
-<div>
-    <h3>Div 1</h3>
-    <p style="background: var(--bgColor);">Paragraph 1</p>
-</div>
-
-<div>
-    <h3>Div 2</h3>
-    <p style="background: var(--bgColor);">Paragraph 2</p>
-</div>
-<footer>
-    <section>
-
-        <div>
-            <h2>About</h2>
-            <ul>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Customers</a></li>
-                <li><a href="#">Careers</a></li>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li><a href="catalog.html"><span>Catalog</span></a></li>
+                <li><a href="blog.html"><span>Blog</span></a></li>
+                <li><a href="about.html"><span>About</span></a></li>
+                <li><a href="contact.html"><span>Contact</span></a></li>
             </ul>
+        </aside>
 
+        <!-- wrapper mail -->
+
+        <div class="app-main">
+            <header class="app-main-header">
+
+                <!-- hamburger -->
+
+                <span>
+                    <button class="icon-button">
+                        X
+                    </button>
+                </span>
+                <h1 class="app-main-header-title">
+                    <em class="app-main-header-title--emphasis">Shopaholic</em>
+                    <span>Super store</span>
+                </h1>
+
+                <!-- nav -->
+
+                <nav>
+                    <a href=""><span>Cart</span></a>
+                    <a href=""><span>WL</span></a>
+                    <a href=""><span>Login</span></a>
+                </nav>
+            </header>
+
+
+            <!-- content -->
+
+            <div>
+                <div>
+                    <main class=" content">
+                        <section class="catalog">
+                            <h2 class="catalog-heading">Catalog</h2>
+                            <div>
+                                <div class="card">
+                                    <div class="card-figure">
+                                        <figure class="image">
+                                            <img src="picture.jpg" alt="product 5">
+                                            <figcaption>This is the picture</figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="card-title">Card title</h3>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad eos facere
+                                            illum, molestias laborum reiciendis mollitia modi magni optio iure cumque
+                                            impedit aliquid ipsa ea odio dolore alias, iste totam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        Main content
+                    </main>
+                </div>
+            </div>
         </div>
 
+        <!-- fotter -->
         <div>
-            <h2>Resources</h2>
-            <ul>
-                <li><a href="#">Docs</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">eBooks</a></li>
-                <li><a href="#">Webinars</a></li>
-            </ul>
-        </div>
+            <footer>
+                <section>
 
-        <div>
-            <h2>Contact</h2>
-            <ul>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Sales</a></li>
-                <li><a href="#">Advertise</a></li>
-            </ul>
-        </div>
+                    <div>
+                        <h2>About</h2>
+                        <ul>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Customers</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
 
-    </section>
-    <section>
-        <ul>
-            <li><a href="#">Terms &amp; Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            &copy; 2024 Copyright Shopaholic Inc.
-        </ul>
-    </section>
-</footer>
+                    </div>
+
+                    <div>
+                        <h2>Resources</h2>
+                        <ul>
+                            <li><a href="#">Docs</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">eBooks</a></li>
+                            <li><a href="#">Webinars</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2>Contact</h2>
+                        <ul>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Sales</a></li>
+                            <li><a href="#">Advertise</a></li>
+                        </ul>
+                    </div>
+
+                </section>
+
+                <!-- Footer legal -->
+
+                <section>
+                    <ul>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        &copy; 2024 Copyright Shopaholic Inc.
+                    </ul>
+                </section>
+            </footer>
 </body>
 </html>
