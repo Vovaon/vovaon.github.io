@@ -3,75 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3 challenges</title>
+
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     
-    <Домашні вправи до лекції 2>Document</Домашні вправи до лекції 2>
+    <style>
+        p {
+            color: red;
+        }
+    </style>
+    <style type="text/css">
+    	
+    	body {
+			background: var(--bgColor);
+            
+		}
+
+		div {
+			--bgColor: limegreen;
+		}
+
+    </style>
 </head>
-<body>
-    
+<body style="background: var(--bgColor);">
 
-<h1>Ласкаво просимо до мого сайту</h1>
-<h2>Про програмування</h2>
-<h3>Про html</h3>	
-<h3>Про css</h3>
+Вправа 2    
+
+
+<p style="color: blue;">This is my paragraph.</p>
+
+
+<hr>
+<p>Звичайний, нудний абзац. Намагайтеся не заснути.</p>
+
+<p class="exciting">The most exciting paragraph on the page. One of a kind!</p>
+
+<div class="exciting">The most exciting paragraph on the page. One of a kind!</div>
+
+<style>
+    .exciting {
+        background: #f69d3c;
+        border: 1px solid #696969;
+        padding: 10px;
+    }
+</style>
+
+<hr>
 
 <div>
-    This is regular text.<br/>
-    This is another line after line break.<br/>
-    This is another line after line break.<br/>
+    <h3>Div 1</h3>
+    <p style="background: var(--bgColor);">Paragraph 1</p>
 </div>
+
 <div>
-    <p>This is a first paragraph. You can add any kind of text here.</p>
-    <p>This is a second paragraph. This is some sample text.</p>
-    <p>This is another paragraph. You can add multiple lines of text in this paragraph.</p>
+    <h3>Div 2</h3>
+    <p style="background: var(--bgColor);">Paragraph 2</p>
 </div>
-<div class="container">
-    <nav>
+<footer>
+    <section>
+
+        <div>
+            <h2>About</h2>
+            <ul>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+
+        </div>
+
+        <div>
+            <h2>Resources</h2>
+            <ul>
+                <li><a href="#">Docs</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">eBooks</a></li>
+                <li><a href="#">Webinars</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Contact</h2>
+            <ul>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Sales</a></li>
+                <li><a href="#">Advertise</a></li>
+            </ul>
+        </div>
+
+    </section>
+    <section>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="catalog.html">Catalog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            &copy; 2024 Copyright Shopaholic Inc.
         </ul>
-    </nav>
-    <header>
-        <h1>Welcome to не придумав</h1>
-        <p>Це елемент заголовка 1</p>
-    </header>
-    <span>
-    <b>
-        Це жирний текст.<br/>
-    І, що ще цікавіше:<br/>
-    <i>Це курсив!</i>
-    </b>
-</span>
-    <main>
-        <h3>Це підзаголовок, укладений у теги "h3".</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam optio expedita provident ratione itaque
-            numquam, dolorem, at consequuntur laborum excepturi magnam culpa impedit obcaecati enim dolor totam.
-            Assumenda, vel impedit?</p>
-        <p>Частка тексту <span style="color:#ff0000">червоного</span> кольору.</p>
-        <hr>
-        <small>
-            Зменшує розмір шрифта на одиницю по відношенню до розміру звичайного тексту.
-        </small>
-        <blockquote cite="https://www.ukrlib.com.ua/books/printit.php?tid=1052"> Но зла Юнона, суча дочка,
-            Розкудкудакалась, як квочка, — Енея не любила — страх; Давно уже вона хотіла, Його щоб душка полетіла К
-            чортам і щоб і дух не пах.
-        </blockquote>
-        <q>Розкудкудакалась, як квочка, — Енея не любила — страх</q>
-        <p>ІВАН КОТЛЯРЕВСЬКИЙ <cite>ЕНЕЇДА</cite></p>
-        <pre>
-        Но зла Юнона, суча дочка,
-        Розкудкудакалась, як квочка, —
-        Енея не любила — страх;
-        Давно уже вона хотіла,
-        Його щоб душка полетіла
-        К чортам і щоб і дух не пах.
-    </pre>
-    </main>
-   
-    
-</div>
+    </section>
+</footer>
 </body>
 </html>
